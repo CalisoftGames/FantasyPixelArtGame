@@ -1,0 +1,65 @@
+This is an outline for the game plan (lol)
+This is a place for us to keep useful info to help guide us along the process
+
+Copyright Calisoft Games
+
+
+====================================================
+Phase Zero:
+    Dummy Sprites
+    Software Architecture
+    Combat Design Concept
+
+Phase One:
+    Create Sprite Assets
+    Create Code
+    Create Scripts
+    Get movement working
+
+Phase Two:
+    Create environment
+    Get Combat working
+    Start quest script functions
+    Start User Interface design
+
+Phase Three:
+    Complete combat balancing
+    Create 3 scenes, Town, Road, and Dungeon
+    Create quests and quest log
+
+
+=================================================
+
+
+First goal of the game is to create a single Town, Road, and Dungeon. This way we have a self contained, 
+if small, playable game. If we get all three of these mechanic systems working, adding more content will
+be (relatively) easy. 
+
+
+Town:
+    Purpose: Quests and Upgrades
+
+    Talk to NPCs
+    Form relationships with NPCs, like Stardew and Animal Crossing
+    Enjoy beautiful scenery
+    Shop
+    Upgrade your character
+
+
+Road:
+    Purpose: Collecting Materials and Exploration
+
+    Explore!
+    Gather Materials!
+    Find Quests and easter eggs
+    Some Combat, but NOT LIKE POKEMON TALL GRASS
+
+
+Dungeon:
+    Purpose: Combat, Quests, and Material Collection
+
+    FIGHT!
+    Gather rare materials only found in the dungeons
+    Complete quest objectives
+    Fight Boss
+
