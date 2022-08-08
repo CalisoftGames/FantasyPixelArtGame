@@ -1,16 +1,16 @@
 extends Sprite
 
 	
-	const SPRITES_MAP := {
-		Vector2.RIGHT: preload("res://assets/Pixel Art/Ghost .png"),
-		Vector2.DOWN: preload("res://assets/Pixel Art/Ghost .png"),
-		Vector2.LEFT: preload("res://assets/Pixel Art/Ghost .png"),
-		Vector2.UP: preload("res://assets/Pixel Art/Ghost .png"),
-		Vector2(1.0, 1.0): preload("res://assets/Pixel Art/Ghost .png"),
-		Vector2(1.0, -1.0): preload("res://assets/Pixel Art/Ghost .png"),
-		Vector2(-1.0, -1.0): preload("res://assets/Pixel Art/Ghost .png"),
-		Vector2(-1.0, 1.0): preload("res://assets/Pixel Art/Ghost .png"),
-	}
+const SPRITES_MAP := {
+	Vector2.RIGHT: preload("res://assets/Pixel Art/Ghost .png"),
+	Vector2.DOWN: preload("res://assets/Pixel Art/Ghost .png"),
+	Vector2.LEFT: preload("res://assets/Pixel Art/Ghost .png"),
+	Vector2.UP: preload("res://assets/Pixel Art/Ghost .png"),
+	Vector2(1.0, 1.0): preload("res://assets/Pixel Art/Ghost .png"),
+	Vector2(1.0, -1.0): preload("res://assets/Pixel Art/Ghost .png"),
+	Vector2(-1.0, -1.0): preload("res://assets/Pixel Art/Ghost .png"),
+	Vector2(-1.0, 1.0): preload("res://assets/Pixel Art/Ghost .png"),
+}
 
 var look_direction := Vector2.RIGHT
 
@@ -23,6 +23,6 @@ func _process(_delta: float) -> void:
 	if input_vector.length() > 0.0 and input_vector != look_direction:
 		texture = SPRITES_MAP[input_vector]
 		look_direction = input_vector
-		flip_h = sign(look_direction.x) == -1.0
+	flip_h = sign(look_direction.x) == -1.0
 		
-	position.y = sin(OS.get_ticks_msec() / 200.0) * 8.0
+	position.y = sin(OS.get_ticks_msec() / 200.0) * 1.0
