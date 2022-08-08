@@ -6,7 +6,7 @@ Copyright Calisoft Games
 
 ====================================================
 Phase Zero:
-    Dummy Sprites
+    Dummy Sprites DONE!
     Software Architecture
     Combat Design Concept
 
@@ -14,7 +14,7 @@ Phase One:
     Create Sprite Assets
     Create Code
     Create Scripts
-    Get movement working
+    Get movement working DONE!
 
 Phase Two:
     Create environment
