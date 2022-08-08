@@ -46,3 +46,5 @@ zoom = Vector2( 0.2, 0.2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 7 )
+
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
