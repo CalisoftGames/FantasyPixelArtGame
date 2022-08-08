@@ -1,50 +1,54 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/Pixel Art/Ebony Final version horiz-walk.png" type="Texture" id=1]
-[ext_resource path="res://PlayerCharacter.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Player/PlayerCharacterKinematic.gd" type="Script" id=2]
 
-[sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 12, 32, 48 )
+[sub_resource type="CircleShape2D" id=8]
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
-region = Rect2( 32, 12, 32, 48 )
+region = Rect2( 0, 11, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
-region = Rect2( 64, 12, 32, 48 )
+region = Rect2( 32, 11, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 1 )
-region = Rect2( 96, 12, 32, 48 )
+region = Rect2( 64, 11, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
-region = Rect2( 128, 12, 32, 48 )
+region = Rect2( 96, 11, 32, 48 )
 
-[sub_resource type="SpriteFrames" id=6]
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 128, 11, 32, 48 )
+
+[sub_resource type="SpriteFrames" id=7]
 animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
 "loop": true,
 "name": "Walk",
 "speed": 15.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=7]
-
-[node name="Area2D" type="Area2D"]
+[node name="KinematicBody2D" type="KinematicBody2D"]
+position = Vector2( 0, -18 )
 script = ExtResource( 2 )
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1, 16 )
+scale = Vector2( 0.75, 0.5 )
+shape = SubResource( 8 )
+
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 6 )
+frames = SubResource( 7 )
 animation = "Walk"
+__meta__ = {
+"_editor_description_": "YXNlcHJpdGVfd2l6YXJkX2NvbmZpZwpzb3VyY2V8PQpsYXllcnw9Cm9wX2V4cHw9VHJ1ZQpvX2ZvbGRlcnw9Cm9fbmFtZXw9Cm9ubHlfdmlzaWJsZXw9RmFsc2UKb19leF9wfD0K"
+}
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite"]
 current = true
 zoom = Vector2( 0.2, 0.2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 7 )
-
-[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
