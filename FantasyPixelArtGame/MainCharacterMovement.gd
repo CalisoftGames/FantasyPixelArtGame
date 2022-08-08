@@ -7,8 +7,8 @@ onready var state_machine = animation_tree.get("parameters/playback")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	state_machine.travel("Walk_Horizontal")
-
+	pass
+# state_machine.travel("walkHorizontal_right")
 
 func _physics_process(delta: float) -> void:
 	var input_vector := Vector2(

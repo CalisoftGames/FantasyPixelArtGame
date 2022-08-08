@@ -2,14 +2,14 @@ extends Sprite
 
 	
 const SPRITES_MAP := {
-	Vector2.RIGHT: preload("res://assets/Pixel Art/Ghost .png"),
-	Vector2.DOWN: preload("res://assets/Pixel Art/Ghost .png"),
-	Vector2.LEFT: preload("res://assets/Pixel Art/Ghost .png"),
-	Vector2.UP: preload("res://assets/Pixel Art/Ghost .png"),
-	Vector2(1.0, 1.0): preload("res://assets/Pixel Art/Ghost .png"),
-	Vector2(1.0, -1.0): preload("res://assets/Pixel Art/Ghost .png"),
-	Vector2(-1.0, -1.0): preload("res://assets/Pixel Art/Ghost .png"),
-	Vector2(-1.0, 1.0): preload("res://assets/Pixel Art/Ghost .png"),
+	Vector2.RIGHT: preload("res://.import/Ebony Final version horiz-walk.png-693e457284a09dc3e5fe265dbc9b9e65.stex"),
+	Vector2.DOWN: preload("res://.import/Ebony Final version horiz-walk.png-693e457284a09dc3e5fe265dbc9b9e65.stex"),
+	Vector2.LEFT: preload("res://.import/Ebony Final version horiz-walk.png-693e457284a09dc3e5fe265dbc9b9e65.stex"),
+	Vector2.UP: preload("res://.import/Ebony Final version horiz-walk.png-693e457284a09dc3e5fe265dbc9b9e65.stex"),
+	Vector2(1.0, 1.0): preload("res://.import/Ebony Final version horiz-walk.png-693e457284a09dc3e5fe265dbc9b9e65.stex"),
+	Vector2(1.0, -1.0): preload("res://.import/Ebony Final version horiz-walk.png-693e457284a09dc3e5fe265dbc9b9e65.stex"),
+	Vector2(-1.0, -1.0): preload("res://.import/Ebony Final version horiz-walk.png-693e457284a09dc3e5fe265dbc9b9e65.stex"),
+	Vector2(-1.0, 1.0): preload("res://.import/Ebony Final version horiz-walk.png-693e457284a09dc3e5fe265dbc9b9e65.stex"),
 }
 
 var look_direction := Vector2.RIGHT
