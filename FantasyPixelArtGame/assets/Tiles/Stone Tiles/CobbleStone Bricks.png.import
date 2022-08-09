@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Plain Grass.png-17e3d1694f8a22c7b3d243d0cefe3d1c.stex"
+path="res://.import/CobbleStone Bricks.png-af738f53fd49da725780cc5a0cb7575c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles/Grass Tiles/Plain Grass.png"
-dest_files=[ "res://.import/Plain Grass.png-17e3d1694f8a22c7b3d243d0cefe3d1c.stex" ]
+source_file="res://assets/Tiles/Stone Tiles/CobbleStone Bricks.png"
+dest_files=[ "res://.import/CobbleStone Bricks.png-af738f53fd49da725780cc5a0cb7575c.stex" ]
 
 [params]
 

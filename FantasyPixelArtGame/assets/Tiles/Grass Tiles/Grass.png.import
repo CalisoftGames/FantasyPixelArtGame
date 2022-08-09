@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Plain Grass autotile.png-c20b03057b7cbdb8fc09ee38981fbc39.stex"
+path="res://.import/Grass.png-2a3a2690861391e6bd10f7c0bf265a2b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles/Grass Tiles/Plain Grass autotile.png"
-dest_files=[ "res://.import/Plain Grass autotile.png-c20b03057b7cbdb8fc09ee38981fbc39.stex" ]
+source_file="res://assets/Tiles/Grass Tiles/Grass.png"
+dest_files=[ "res://.import/Grass.png-2a3a2690861391e6bd10f7c0bf265a2b.stex" ]
 
 [params]
 
